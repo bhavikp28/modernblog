@@ -1,9 +1,22 @@
 import '@styles/globals.css';
 import Nav from '@components/Nav';
 import Provider from '@components/Provider';
+
 export const metadata = {
     title: "Home",
-    description: 'Discover & Share Food'
+    description: 'Discover & Share Food',
+    icons: {
+      icon: [
+        '/favicon/favicon.ico',
+      ],
+      apple: [
+        '/favicon/apple-touch-icon.png?v=2',
+      ],
+      shortcut: [
+        '/favicon/apple-touch-icon.png'
+      ]
+    },
+    manifest: '/site.webmanifest'
 }
 const Roolayout = ({children}) => {
   return (
